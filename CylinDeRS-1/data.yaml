@@ -1,0 +1,14 @@
+names:
+- person
+- gas_cylinder
+roboflow:
+  license: CC BY 4.0
+  project: cylinders-iaq6n
+  url: https://universe.roboflow.com/klearchos-stavrothanasopoulos-konstantinos-gkountakos-6jwgj/cylinders-iaq6n/dataset/1
+  version: 1
+  workspace: klearchos-stavrothanasopoulos-konstantinos-gkountakos-6jwgj
+test: ../test/images
+train: CylinDeRS-1/train/images
+val: CylinDeRS-1/valid/images
+nc: 2
+names: ['person', 'gas_cylinder']
