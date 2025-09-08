@@ -1,15 +1,13 @@
 import os
 
 # Path to the labels folder inside gascylinder-1
-label_dirs = [
-    r"C:\Users\srish\yolov5\yolov5\CylinDeRS-1\valid\labels"
-]
+label_dirs = [r"C:\Users\srish\yolov5\yolov5\CylinDeRS-1\valid\labels"]
 
 for label_dir in label_dirs:
     for filename in os.listdir(label_dir):
         if filename.endswith(".txt"):
             file_path = os.path.join(label_dir, filename)
-            with open(file_path, "r") as f:
+            with open(file_path) as f:
                 lines = f.readlines()
 
             new_lines = []
